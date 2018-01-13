@@ -1,0 +1,32 @@
+body {
+    color: #00F;
+    background-color: #CFC;
+    font-family: Georgia, Cambria, serif;
+    font-size: 16px;
+}
+h1 {
+    color: #F00;
+    font-size: 32px;
+}
+h1, h2 {
+    font-family: Verdana, Calibri, sans-serif;
+}
+h2 {
+    color: #A00;
+    font-size: 24px;
+}
+bf {
+    color: #060;
+}
+noun {
+    font-weight: bold;
+    font-size: 20px;
+}
+stickOut {
+    color: #FFF;
+    background-color: #000;
+    font-style: italic;
+}
+ul {
+    list-style: circle;
+}
