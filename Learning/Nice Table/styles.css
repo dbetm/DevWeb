@@ -1,0 +1,41 @@
+table {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin: 10px;
+}
+
+table, tr, th, td {
+    border: 1px solid #333;
+}
+
+th {
+    background-color: #F5F5F5;
+    padding: 0 .3em;
+}
+
+.euro, .dolar, .yen, .libra {
+    padding: 0 .3em 0 1.2em;
+    background-color: #E6F3FF;
+    background-repeat: no-repeat;
+    background-position: left center;
+}
+
+th.euro { background-image: url(img/euro.png); }
+
+th.dolar { background-image: url(img/dollar.png); }
+
+th.libra { background-image: url(img/libra.png); }
+
+th.yen { background-image: url(img/yen.png); }
+
+tr td { /* tr:nth-child(n+1) td --> es equivalente*/
+    text-align: right;
+}
+
+tr:nth-child(even) {
+    background-color: #FFFFCC;
+}
+
+tr:hover {
+    background-color: #FFFF66;
+}
