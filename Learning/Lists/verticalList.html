@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Lista vertical</title>
+        <style media="screen">
+            .no-style-list a {
+                text-decoration: none;
+            }
+
+            .no-style-list li {
+                list-style-type: none;
+            }
+
+            .no-style-list li a {
+                width: 100%;
+                display: block;
+            }
+
+            .nice-style {
+                text-align: center;
+            }
+
+            .nice-style a {
+                color: #fff;
+                padding: 3px;
+                font-weight: bold;
+            }
+
+            .nice-style li {
+                width: 150px;
+                margin: 4px;
+                background-color: blue;
+            }
+
+            .nice-style li:hover, .nice-style li:active {
+                border: 1px solid red;
+            }
+        </style>
+    </head>
+    <body>
+        <ul class="no-style-list nice-style">
+            <li><a href="#">Presentación</a></li>
+            <li><a href="#">Estudios</a></li>
+            <li><a href="#">Alumnos</a></li>
+            <li><a href="#">Deportes</a></li>
+            <li><a href="#">Servicios</a></li>
+        </ul>
+    </body>
+</html>
