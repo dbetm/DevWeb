@@ -1,0 +1,22 @@
+.box-sizing-content, .box-sizing-border {
+    width: 39em;
+    border: 1em solid black;
+}
+
+.box-sizing-content .split, .box-sizing-border .split {
+    width: 50%;
+    border: 1em silver ridge;
+    float: left;
+}
+
+.box-sizing-content .split {
+    box-sizing: content-box;
+}
+
+.box-sizing-border .split {
+    box-sizing: border-box;
+}
+
+.clear-both {
+    clear: both;
+}
