@@ -26,4 +26,5 @@ for (var i = 0; i < cajas.length; i++) {
     cajas[i].style.background = "red";
     cajas[i].style.border = "1px solid white";
     cajas[i].style.marginTop = "2px";
+    cajas[i].style.display = "inline-block";
 }
