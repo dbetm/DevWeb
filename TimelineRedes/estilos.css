@@ -1,0 +1,116 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+section, header, footer, article, figure, figcaption {
+    display: block;
+}
+
+body {
+    font-family: sans-serif;
+    background-image: url("img/servers_room.jpg");
+    background-attachment: fixed;
+}
+
+h1 {
+    margin-top: 12px;
+    font-size: 1.8em;
+}
+
+#menu {
+    background: #d8d7d9;
+    padding: 5px 15px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    width: 100%;
+}
+
+#menu li {
+    display: inline-block;
+    list-style: none;
+    padding: 5px;
+}
+
+#menu li a {
+    text-decoration-color: none;
+    text-decoration-line: none;
+    color: #383636;
+    font: normal verdana 14px, sans-serif;
+}
+
+#menu li a:hover {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+section {
+    width: 85%;
+    margin: 45px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+
+article {
+    border: 1px solid #999999;
+    padding: 25px;
+    margin: 25px;
+}
+
+article:nth-child(2n+1) {
+    background: rgba(249, 210, 25, 0.8);
+}
+
+article:nth-child(2n) {
+    background: rgba(249, 159, 25, 0.8);
+}
+
+article header {
+    margin-bottom: 25px;
+}
+
+article p {
+    text-align: justify;
+    color: #383636;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+figure {
+    margin: 15px 2px;
+}
+
+.tiposNetworks {
+    margin-left: inherit;
+    text-align: left;
+    font-size: 20px;
+}
+
+.tiposNetworks li {
+    margin-bottom: 8px;
+    text-align: justify;
+    color: #383636;
+    font-size: 1.1em;
+}
+
+#definiciones-capas-osi p {
+    margin-bottom: 10px;
+}
+
+footer {
+    clear: both;
+    background-color: rgb(34, 34, 34);
+    padding: 20px;
+    text-align: center;
+    border-top: 2px solid #999999;
+    color: white;
+}
+
+footer a {
+    text-decoration: none;
+    color: rgb(26, 153, 117);
+}
