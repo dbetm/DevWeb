@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Curso de jQuery</title>
+        <script src="../jquery-3.3.1.js" charset="utf-8"></script>
+    </head>
+    <body>
+        <script type="text/javascript">
+            $.when($.ready, $.getScript("script.js")).then(function() {
+                console.log("Todo bien");
+            }).catch(function() {
+                console.log("Hubo errores con el script");
+            });
+        </script>
+    </body>
+</html>
