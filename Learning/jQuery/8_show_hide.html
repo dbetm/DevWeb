@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Curso de jQuery</title>
+        <script src="../jquery-3.3.1.js" charset="utf-8"></script>
+        <style media="screen">
+            #parrafo {
+                display: none;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 class="saludo">Hola mundo</h1>
+        <p id="parrafo">Cada muro es una puerta</p>
+        <div>
+            <button type="button" name="button" onclick="mostrar();">Mostrar párrafo</button>
+            <button type="button" name="button2" onclick="ocultar();">Ocultar párrafo</button>
+        </div>
+        <script type="text/javascript">
+        function mostrar() {
+            $(function() {
+                $('#parrafo').show();
+            });
+        }
+        function ocultar() {
+            $(function() {
+                $('#parrafo').hide(800);
+            });
+        }
+        </script>
+    </body>
+</html>

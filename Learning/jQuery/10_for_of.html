@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Curso de jQuery</title>
+        <script src="../jquery-3.3.1.js" charset="utf-8"></script>
+    </head>
+    <body>
+        <h1 class="saludo">Hola mundo</h1>
+        <p id="parrafo">Cada muro es una puerta</p>
+        <div>
+            <button type="button" name="button" onclick="conForOf();">Iterar con for</button>
+        </div>
+        <script type="text/javascript">
+        function conForOf() {
+            // Creamos un arreglo de objetos
+            var colors = new Array(new Color('red','#f00'), new Color('green','#0f0'));
+            $(function() {
+                for (color of colors) {
+                    console.log(color);
+                    console.log(color.colorName);
+                }
+            });
+        }
+        function Color(colorName, hexValue) {
+            this.colorName = colorName;
+            this.hexValue = hexValue;
+        }
+        </script>
+    </body>
+</html>

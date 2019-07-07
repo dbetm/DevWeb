@@ -15,6 +15,11 @@
                 alert("Saludo: " + str);
                 var clase = $('h1').attr('class');
                 console.log("La clase de saludo es: " + clase);
+                // Cambiarle la clase
+                var clase2 = $('h1').attr('class', 'titulo');
+                console.log("Sus clases son: " + clase2);
+                // Agregarle un id
+                var id = $('h1').attr('id', 'saludo');
             });
         </script>
     </body>

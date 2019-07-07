@@ -4,6 +4,7 @@ function main() {
     for (var i = 0; i <= n; i++) {
         p = document.createElement('p');
         for (var j = 0; j <= i; j++) {
+		console.log(n + ", " + j);
             p.innerHTML += calcularCombinatoria(i, j) + " ";
         }
         document.body.appendChild(p);

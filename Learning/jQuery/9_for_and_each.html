@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Curso de jQuery</title>
+        <script src="../jquery-3.3.1.js" charset="utf-8"></script>
+    </head>
+    <body>
+        <h1 class="saludo">Hola mundo</h1>
+        <p id="parrafo">Cada muro es una puerta</p>
+        <div>
+            <button type="button" name="button" onclick="conFor();">Iterar con for</button>
+            <button type="button" name="button2" onclick="conEach();">Iterar con each</button>
+        </div>
+        <script type="text/javascript">
+        function conEach() {
+            $(function() {
+                var numbers = [1, 2, 3, 4, 5];
+                $.each(numbers, function(i, value) {
+                    console.log(i + " => " + value);
+                });
+            });
+        }
+        function conFor() {
+            var numbers = ["gato",2,true,4,5];
+            $(function() {
+                for(var i = 0; i < numbers.length; i++) {
+                    console.log(i + " => " + numbers[i]);
+                }
+            });
+        }
+        </script>
+    </body>
+</html>

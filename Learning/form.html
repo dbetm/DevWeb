@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang = "es">
+<head>
+    <meta charset = "utf-8">
+    <title>New features for forms in HTML5</title>
+</head>
+<body>
+    <h1>New features for forms in HTML5</h1>
+    <p>Simple example</p>
+    <form id = "form-order">
+        <p>
+            <label for = "name"> Name* :</label>
+            <input type = "text" name = "name" id = "name" placeholder = "Type your name" autocomplete autofocus required />
+        </p>
+        <p>
+            <label for = "pass" >Password* :</label>
+            <input type = "password" name = "pass" id = "pass" placeholder = "qwe1234" pattern = "[a-z]{3}[0-9]{4}"/> 
+            The password must to content 3 characters and four numbers in this order
+        </p>
+        <p>
+            <label for = "phone"> Phone </label>
+            <input type = "tel" name = "phone" id = "phone" placeholder = "+7965453635" />
+        </p>
+        <p>
+            <label for = "email"> E-mail </label>
+            <input type = "email" name = "email" id = "email" placeholder = "example@email.com" />
+        </p>
+        <p>
+            <label for = "website"> Your Website </label>
+            <input type = "url" name = "website" id = "website" placeholder = "https://www.yourweb.com" />
+        </p>
+        <p>
+            <label for = "numberexample"> # Themes </label>
+            <input type = "number" name = "numberexample" id = "numberexample" min = "2" max = "10" placeholder = "2" step = "2"/> (Between 2 and 10)
+        </p>
+        <p>
+            <label for = "deliverydate"> Delivery date</label>
+            <input type = "date" name = "deliverydate" min = "1998-01-06"/>            
+        </p>
+        <p>
+            <label for = "icolor">Color (item) </label>
+            <input type = "color" name = "icolor" id = "icolor" value = "green"/>
+        </p>
+         <p>
+            <label for = "search">Search </label>
+            <input type = "search" name = "search" id = "search"/>
+        </p>
+         <p>
+            <label for = "points"> Range for values </label>
+            <input type = "range" name = "points" id = "points" min = "1" max = "10"/> (Between 1 and 10)
+        </p>
+        <p>
+            <fieldset>
+                <legend>Choose a priority</legend>
+                <p><label><input type = "radio" name = "priority" value = "low" checked /> Low </label></p>
+                <p><label><input type = "radio" name = "priority" value = "med" /> Medium </label></p>
+                <p><label><input type = "radio" name = "priority" value = "high" /> High </label></p>
+            </fieldset>
+        </p>
+        <p>
+            <fieldset>
+                <legend>Select type of send</legend>
+                <p><label><input type = "checkbox" name = "deliverytype" value = "urgent" checked /> Urgent </label></p>
+                <p><label><input type = "checkbox" name = "deliverytype" value = "acuse" /> With acuse </label></p>
+                <p><label><input type = "checkbox" name = "deliverytype" value = "cashback" /> Cash on delivery </label></p>
+            </fieldset>
+        </p>
+        <input type = "submit" value = "Send">
+    </form>
+</body>
+</html>
