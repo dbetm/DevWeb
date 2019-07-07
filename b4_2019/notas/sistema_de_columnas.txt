@@ -1,0 +1,69 @@
+¿Para qué sirve?
+Distribuir el contenido de la página web en múltiples columnas
+
+Está basado en flex-box.
+
+¿Qué elementos conforman este sistema?
+1) Contenedor - container:
+Cualquier etiqueta HTML (usar div) con clase container
+2) Filas - row:
+Cualquier tipo HTML (usar div) con clase row
+3) Columnas - col#:
+Cualquier tipo HTML, se define acompañado de un número entre 1 y 12
+
+Hay 2 tipos de contenedores.
+1) El contenido no se distribuye por todo el ancho de la pantalla (no se desparrama).
+2) Cuando los elementos, aunque se reduzca con zoom, cubren toda la pantalla.
+    Se llama el contenedor fluido, a diferencia del otro (que suele cubrir el 80%) éste cubre
+    el 100%.
+
+Las filas tienen que ser hijas directas de un contenedor.
+
+Las columnas tienen que ser hijas directas de una fila.
+Dentro de las filas solo crea columnas.
+
+Una fila puede tener 12 columnas como máximo.
+
+A las columnas (clase) le asignamos un número.
+Ese número representa el número de columnas que se desean usar de las 12
+disponibles.
+
+Si superamos las 12 columnas por fila, las siguientes saltarán abajo, formando
+una nueva fila.
+
+El contenido tiene que ir dentro de las columnas.
+
+La clase 'col' nos permite crear columnas de proporciones idénticas.
+
+Podemos modificar la medida de una columna dependiendo del tamaño de la pantalla.
+
+Bootstrap maneja 5 contextos.
+
+Condición |     Class     |   Abreviación
+>= 0 px       col-*       [Por defecto]
+>= 576 px     col-sm-*      SM
+>= 768 px     col-md-*      MD
+>= 992 px     col-lg-*      LG
+>= 1200 px    col-xl-*      XL
+
+Los contextos se heredan de menor a mayor.
+
+Podemos crear columnas vacías con offset.
+También permite contextos:
+offset-sm-#
+offset-lg-#
+offset-xl-#
+
+
+Podemos crear columnas anidadas.
+.container
+    .row
+        .col
+            .row
+                .col
+
+Podemos reordenar las columnas.
+order-[first|last] | [0|1|2|3|#]
+También se permite con contexto:
+order-xl-4
+order-sm-last

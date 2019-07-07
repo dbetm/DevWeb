@@ -1,0 +1,22 @@
+// -----------------------
+//    Patrón de colores
+// -----------------------
+$texto: red;
+$principal: blue;
+$secundario: orange;
+
+/* ----------------------
+Estilos de prueba
+*/
+
+.container {
+    border: 1px solid red;
+}
+
+.row {
+    border: 1px solid blue;
+}
+// Todas las etiquetas hijas directas de row
+.row > * {
+    border: 1px solid green;
+}
