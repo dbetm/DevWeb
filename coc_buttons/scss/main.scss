@@ -1,0 +1,66 @@
+$primaryColor: #41ffb4;
+$dangerColor: #da4c5d;
+$adviseColor: #413f3f;
+$adviseDarkColor: #262626;
+$secondaryColor: #005e81;
+$font: 'Lato', verdana, sans-serif;
+$borderRadius: 10px;
+
+
+button {
+    padding: 5px 6px;
+    margin: 3px;
+    border: none;
+    font-weight: bold;
+    font-family: $font;
+    &:focus {
+        outline: none !important;
+    }
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.btn-accept {
+    &:active {
+        font-size: 1.2em;
+    }
+}
+
+.btn-delete {
+    background-color: $dangerColor;
+    color: #fff;
+}
+
+.btn-cancel, .btn-close {
+    background: $adviseColor;
+    color: #fff;
+    &:hover {
+        background-color: $adviseDarkColor;
+    }
+}
+
+.btn-submit {
+    box-shadow: 2px 2px 2px #3b3b3b;
+}
+
+.btn-submit, .btn-watch, .btn-accept {
+    border-radius: $borderRadius;
+    background-color: $primaryColor;
+    &:hover {
+        background-color: #000;
+        color: $primaryColor;
+    }
+}
+
+.btn-edit {
+    background-color: $secondaryColor;
+    color: #fff;
+    padding-left: 8px;
+    padding-right: 8px;
+    &:hover {
+        background-color: #fff;
+        color: $secondaryColor;
+        border: 1px solid #505050;
+    }
+}
