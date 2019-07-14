@@ -26,10 +26,10 @@ button {
   -webkit-box-shadow: 2px 2px 2px #3b3b3b;
           box-shadow: 2px 2px 2px #3b3b3b; }
 
-.btn-submit, .btn-watch, .btn-accept {
+.btn-submit, .btn-watch, .btn-accept, .btn-add {
   border-radius: 10px;
   background-color: #41ffb4; }
-  .btn-submit:hover, .btn-watch:hover, .btn-accept:hover {
+  .btn-submit:hover, .btn-watch:hover, .btn-accept:hover, .btn-add:hover {
     background-color: #000;
     color: #41ffb4; }
 
@@ -42,5 +42,9 @@ button {
     background-color: #fff;
     color: #005e81;
     border: 1px solid #505050; }
+
+.btn-add {
+  padding-left: 14px;
+  padding-right: 14px; }
 
 /*# sourceMappingURL=button_models.css.map */

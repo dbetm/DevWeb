@@ -6,7 +6,6 @@ $secondaryColor: #005e81;
 $font: 'Lato', verdana, sans-serif;
 $borderRadius: 10px;
 
-
 button {
     padding: 5px 6px;
     margin: 3px;
@@ -44,7 +43,7 @@ button {
     box-shadow: 2px 2px 2px #3b3b3b;
 }
 
-.btn-submit, .btn-watch, .btn-accept {
+.btn-submit, .btn-watch, .btn-accept, .btn-add {
     border-radius: $borderRadius;
     background-color: $primaryColor;
     &:hover {
@@ -63,4 +62,9 @@ button {
         color: $secondaryColor;
         border: 1px solid #505050;
     }
+}
+
+.btn-add {
+    padding-left: 14px;
+    padding-right: 14px;
 }
